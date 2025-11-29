@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 強制重置預設樣式，確保鋪滿全螢幕 */
+:root, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 防止水平卷軸 */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
